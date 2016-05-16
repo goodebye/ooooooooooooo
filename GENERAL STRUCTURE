@@ -1,0 +1,33 @@
+models:
+posts
+user (types: authors, editor(s?), ppl who can commment?)
+
+posts have:
+	a title
+	a contributor
+	a post html page
+		- handlebars template for the site header which should be customizable via javascript-based thing for colors etc
+		- comments section ???
+	a header image
+		- TODO: specification
+
+
+post schema {
+	id: id,
+	title: string,
+	contributor: id,
+
+	header_img: url?,
+
+}
+
+contributor flow:
+	- REGISTRATION
+		- i use a web form specific to editor accts to send a form and code via email to a potential contributor.
+		- contributor clicks on email, enters code, has an acct dashboard
+
+	- DASHBOARD
+		- should have limited number of proposals, and then once a proposal is approved, it shows up in a diff section with notes and an edit button
+
+	- POST EDIT PAGE
+		- think tumblr, with an editor on the left pane and the display on the right, support for static file upload for css/js stuff

@@ -1,0 +1,18 @@
+{
+  "name": "ooooooooooo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "lorem-ipsum": "^1.0.3",
+    "mongoose": "^4.4.17"
+  }
+}
