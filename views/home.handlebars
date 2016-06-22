@@ -1,0 +1,19 @@
+<div id="post-list">
+    {{#each posts}}
+        <div class="row essay-row">
+            <div class="one column essay-date">
+                {{ fmtPublishDate datePublished }}
+            </div>
+            <div class="eleven columns">    
+                <div class="essay" style="background-image:url(https://unsplash.it/200/300/?random={{_id}})">
+           
+                <div class="essay-lede">
+                    <h4><span class="essay-headline"><a href="/post/{{title}}">{{title}}</a></span>
+                    <br />
+                    <span class="essay-contributor">name goes here</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+	{{/each}}
+</div>

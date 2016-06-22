@@ -1,0 +1,46 @@
+body {
+  background-color: #fff; 
+  font-family: Arial, sans-serif;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+a {
+  color: rgb(255, 0, 145);
+}
+
+#page-title {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.essay {
+  width: 100%;
+  height: 150px;
+  background-size: 100%;
+  border: 3px solid #000;
+  text-align: center;
+}
+
+.essay-date {
+    text-align: center;
+}
+
+.essay-lede {
+    height: 100%;
+    width: 100%;
+}
+
+.essay-headline {
+  color: #000;
+  background-color: rgb(255, 255, 255);
+}
+
+.essay-contributor {
+  color: #000;
+  background-color: rgb(255, 255, 255);
+}
