@@ -1,6 +1,6 @@
 models:
 posts
-user (types: authors, editor(s?), ppl who can commment?)
+contributor (types: authors, editor(s?), ppl who can commment?)
 
 posts have:
 	a title
@@ -8,16 +8,17 @@ posts have:
 	a post html page
 		- handlebars template for the site header which should be customizable via javascript-based thing for colors etc
 		- comments section ???
-	a header image
+	lede html (for the home feed)
 		- TODO: specification
+    a published boolean
 
 
 post schema {
 	id: id,
 	title: string,
 	contributor: id,
-
-	header_img: url?,
+    
+	header_html: string,
 
 }
 
@@ -30,4 +31,4 @@ contributor flow:
 		- should have limited number of proposals, and then once a proposal is approved, it shows up in a diff section with notes and an edit button
 
 	- POST EDIT PAGE
-		- think tumblr, with an editor on the left pane and the display on the right, support for static file upload for css/js stuff
+- think tumblr, with an editor on the left pane and the display on the right, support for static file upload for css/js stuff

@@ -1,6 +1,7 @@
 body {
-  background-color: rgb(255, 247, 207);
+  background-color: rgb(0, 0, 20);
   color: rgb(255, 0, 145);
+  font-family: Arial, sans-serif;
 }
 
 #page-title {
@@ -25,12 +26,12 @@ body {
 
 .essay-headline {
   color: #000;
-  background-color: rgba(255, 255, 255, 0.39);
-  font-size: 50px
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
 }
 
 .essay-contributor {
   color: #000;
-  background-color: rgba(255, 255, 255, 0.39);
+  background-color: rgb(255, 255, 255);
   font-size: 25px;
 }
