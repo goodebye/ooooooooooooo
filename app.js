@@ -31,6 +31,10 @@ app.use(expressSession({ secret: 'asdf' }));
 app.use(passport.initialize());
 app.use(passport.session());
 
+passport.use(new passportLocal.Strategy(function(username, password, done) {
+    
+}));;
+
 //controllers
 var homeController = require('./controllers/home');
 var postController = require('./controllers/post');
@@ -48,6 +52,18 @@ app.get('/', function(req, res) {
 
 app.get('/about', function(req, res) {
     res.render('about');
+});
+
+app.get('/register', function(req, res) {
+    res.render('register');
+});
+
+app.get('/login', function(req, res) {
+    res.render('login');
+});
+
+app.post('login', passport.authenticate('local'), function(req, res) {
+        
 });
 
 app.listen(8080, function() {
